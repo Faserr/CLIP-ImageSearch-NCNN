@@ -130,7 +130,7 @@ int CLIP::load(AAssetManager* mgr, std::string vocab)
     std::string s;
     int idx = 0;
     while (getline(infile, s)) {
-        tokenizer_token2idx.insert(std::pair<std::string, int>(s.substr(0,s.length()-1), idx));
+        tokenizer_token2idx.insert(std::pair<std::string, int>(s.substr(0,s.length()), idx));
         idx++;
     }
 
